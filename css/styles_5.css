@@ -165,5 +165,84 @@ input[type=checkbox]{
 
    .homeimg1 {
        width: 400px;
-       padding: 0 auto;
+       border: dotted;
+       grid-area: a;
    }
+
+   .text1 {
+       grid-area: b;
+   }
+
+   .text1 input {
+       width: 400px;
+   }
+   
+   .text2 {
+       grid-area: c;
+   }
+
+   .text3 {
+       grid-area: d;
+   }
+
+   .text4 {
+       grid-area: e;
+   }
+
+   .text5 {
+       grid-area: f;
+   }
+
+   .text6 {
+       grid-area: g;
+   }
+
+   .text6 input {
+       width: 400px;
+       height: 400px;
+   }
+
+   .text7 {
+       grid-area: h;
+   }
+
+   .text7 input {
+       width: 400px;
+       height: 400px;
+   }
+
+   .main {
+       display: grid;
+       grid-template-areas: 
+       'a a b b'
+       'a a c d'
+       'a a e f'
+       'g g h h';
+       justify-content: center;
+       grid-gap: 30px;
+   }
+
+   .foot {
+       display: flex;
+       justify-content: center;
+       padding: 2rem;
+   }
+
+   button {
+    color: #ffffff;
+    background-color: #E53636;
+    padding:  12px;
+    border-radius: 8px;
+    border: none;
+    width: 140px;
+}
+
+button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+button a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
