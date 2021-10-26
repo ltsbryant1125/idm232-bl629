@@ -152,74 +152,8 @@ input[type=checkbox]{
    }
    } */
 
-.background-image {
-    background-image: url(/images/image.jpeg);
-    background-size: cover;
-    position: relative;
-    text-align: center;
-    color: #E53636;
-    height: 500px;
-    -webkit-box-shadow: inset 0px -6px 18px -10px rgba(0,0,0,0.7); 
-    box-shadow: inset 0px -6px 18px -10px rgba(0,0,0,0.7);
-}
-
-.centertxt {
-    position: absolute;
-    background-color: white;
-    padding: 0px 16px;
-    border-radius: 8px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.holders {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.homeimg1 {
-    grid-area: img1;
-    width: 400px;
-}
-
-.food {
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.homeimg2 {
-    grid-area: img2;
-    width: 400px;
-}
-
-.homeimg3 {
-    grid-area: img3;
-    width: 400px;
-}
-
-.homeimg4 {
-    grid-area: img4;
-    width: 400px;
-}
-
-.homeimg5 {
-    grid-area: img5;
-    width: 400px;
-}
-
-.homeimg6 {
-    grid-area: img6;
-    width: 400px;
-}
-
-.home_content {
+.head {
+    background-color: #E5BABA;
     display: grid;
-    grid-template-areas: 
-    'img1 img2 img3'
-    'img4 img5 img6';
-    justify-content: center;
-    grid-gap: 50px;
-    padding: 3rem;
+    
 }
-
