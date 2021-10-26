@@ -152,34 +152,12 @@ input[type=checkbox]{
    }
    } */
 
-.type {
-    grid-area: filter1;
-}
+   h1 {
+       margin-left: 12.5%;
+       color: #E53636;
+   }
 
-.diets {
-    grid-area: filter2;
-}
-
-.time {
-    grid-area: filter3;
-}
-
-.more {
-    grid-area: filter4;
-}
-
-.head {
-    background-color: #E5BABA;
-    display: grid;
-    grid-template-areas: 
-    'filter1 filter2 filter3 filter4'
-    ;
-    align-items: center;
-    justify-content: space-around;
-    height: 7.5rem;
-}
-
-.homeimg1 {
+   .homeimg1 {
     grid-area: img1;
     width: 400px;
 }
@@ -199,27 +177,31 @@ input[type=checkbox]{
     width: 400px;
 }
 
-.homeimg4 {
-    grid-area: img4;
-    width: 400px;
+.info1 {
+    grid-area: info1;
+    width: 600px;
 }
 
-.homeimg5 {
-    grid-area: img5;
-    width: 400px;
+.info2 {
+    grid-area: info2;
+    width: 600px;
 }
 
-.homeimg6 {
-    grid-area: img6;
-    width: 400px;
+.info3 {
+    grid-area: info3;
+    width: 600px;
 }
 
-.main {
+.result {
     display: grid;
     grid-template-areas: 
-    'img1 img2 img3'
-    'img4 img5 img6';
-    justify-content: center;
+    'img1 info1'
+    'img2 info2'
+    'img3 info3'
+    ;
     grid-gap: 50px;
-    padding: 3rem;
+}
+
+.homeimg1, .homeimg2, .homeimg3{
+    margin-left: 30%;
 }
