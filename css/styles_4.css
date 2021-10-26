@@ -1,0 +1,253 @@
+html {
+    box-sizing: border-box;
+    color: #E53636;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu li {
+    list-style: none;
+}
+
+h1.homeA {
+    text-align: center;
+    padding: 40px 0px 0px;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #E53636;
+    -webkit-box-shadow: 0px 3px 15px 4px rgba(0,0,0,0.52); 
+    box-shadow: 0px 3px 15px 4px rgba(0,0,0,0.52);
+   }
+   .navbar input[type=text] {
+    color: #E53636;
+    float: right;
+    padding: 8px 100px 8px 8px;
+    border: solid;
+    border-width: thin;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-right: 300px;
+    font-size: 1rem;
+    }
+   .nav-links a {
+    color: #E53636;
+   }
+   /* LOGO */
+   .logo {
+    font-size: 32px;
+   }
+   .logo a {
+       text-decoration: none;
+       color: #E53636;
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+   .menu li:hover {
+    border-radius: 5px;
+    border: solid;
+    transition: 0.2s ease;
+    text-decoration: underline;
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+   /* DROPDOWN MENU */
+   .services {
+    position: relative; 
+   }
+   .dropdown {
+    background-color: #ffffff;
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 0.5em 1em;
+    width: 11em;
+    text-align: center;
+   }
+   .dropdown li:hover {
+    text-decoration: underline;
+    border: solid;
+    transition: .2s ease;
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+
+   /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   /* APPLYING MEDIA QUERIES */
+   /* @media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color:#ffffff;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+   }
+   .menu li:hover {
+    display: inline-block;
+    text-decoration: underline;
+    border: solid;
+    transition: 0.2s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   .dropdown li:hover {
+    background-color: #ffffff;
+   }
+   } */
+
+   .header {
+       display: flex;
+       justify-content: center;
+       padding: 1.5rem;
+   }
+
+   h1.header {
+    text-align: center;
+    margin: 3rem;
+   }
+
+   .homeimg1 {
+    grid-area: img1;
+    width: 400px;
+}
+
+.food {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.homeimg2 {
+    grid-area: img2;
+    width: 400px;
+}
+
+.homeimg3 {
+    grid-area: img3;
+    width: 400px;
+}
+
+.info1 {
+    grid-area: info1;
+    width: 600px;
+}
+
+.info2 {
+    grid-area: info2;
+    width: 600px;
+}
+
+.info3 {
+    grid-area: info3;
+    width: 600px;
+}
+
+.result {
+    display: grid;
+    grid-template-areas: 
+    'img1 info1'
+    'img2 info2'
+    'img3 info3'
+    ;
+    grid-gap: 50px;
+}
+
+.homeimg1, .homeimg2, .homeimg3{
+    margin-left: 30%;
+}
+
+   .add {
+       grid-area: a;
+   }
+   
+   .edit {
+       grid-area: b;
+   }
+
+   .delete {
+       grid-area: c;
+   }
+
+   .content {
+    display: grid;
+    grid-template-areas: 
+    'a b c';
+    justify-content: center;
+    grid-gap: 50px;
+    padding: 3rem;
+   }
+
+   button {
+       color: #ffffff;
+       background-color: #E53636;
+       padding:  12px;
+       border-radius: 8px;
+       border: none;
+       width: 140px;
+   }
+
+   button a {
+       text-decoration: none;
+       color: #ffffff;
+   }
+   
+   button a:visited {
+       text-decoration: none;
+       color: #ffffff;
+   }
