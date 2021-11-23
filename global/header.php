@@ -1,7 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+
+include 'includes/database.php';
+
+?>
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
@@ -12,8 +18,7 @@
 <body>
     <nav class="navbar">
         <!-- LOGO -->
-        <div class="logo"><a href="index.html">Logo</a></div>
-        <form action="search.html"><input type="text" placeholder="Search..."></form>
+        <div class="logo"><a href="index.php">Logo</a></div>
         <!-- NAVIGATION MENU -->
         <ul class="nav-links">
           <!-- USING CHECKBOX HACK -->
@@ -21,9 +26,10 @@
           <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
           <!-- NAVIGATION MENUS -->
           <div class="menu">
-            <li><a href="admin.html">Admin</a></li>
+            <li><a href="admin.php">Admin</a></li>
+            <li><a href="search.php">Search</a></li>
             <li class="services">
-              <a href="recipes.html">Recipes</a>
+              <a href="recipes.php">Recipes</a>
               <!-- DROPDOWN MENU -->
               <!-- <ul class="dropdown">
                 <li><a href="/">Breakfast Recipes</a></li>
@@ -38,30 +44,3 @@
           </div>
         </ul>
       </nav>
-    <div class="background-image">
-      <div class="centertxt"><h1>Try our new Thanksgiving Recipes!</h1></div>
-    </div>
-    <h1 class="homeA">What's New</h1>
-    <div class="home_content">
-      <div class="homeimg1">
-        <a href="details.html"><img class="food" src="images/burger.png" alt="Burger"></a>
-      </div>
-      <div class="homeimg2">
-        <img class="food" src="images/pizza.jpeg" alt="Pizza">
-      </div>
-      <div class="homeimg3">
-        <img class="food" src="images/pasta.jpg" alt="Pasta">
-      </div>
-      <div class="homeimg4">
-        <img class="food" src="images/Martini.jpeg" alt="Martini">
-      </div>
-      <div class="homeimg5">
-        <img class="food" src="images/chocolate.jpeg" alt="Chocolate lasagna" >
-      </div>
-      <div class="homeimg6">
-        <img class="food" src="images/steak.jpeg" alt="Steak">
-      </div>
-    </div>
-<script src="/js/main.js"></script>
-</body>
-</html>

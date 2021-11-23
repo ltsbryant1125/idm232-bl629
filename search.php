@@ -11,8 +11,7 @@
 <body>
     <nav class="navbar">
         <!-- LOGO -->
-        <div class="logo"><a href="index.html">Logo</a></div>
-        <form action="search.html"><input type="text" placeholder="Search..."></form>
+        <div class="logo"><a href="index.php">Logo</a></div>
         <!-- NAVIGATION MENU -->
         <ul class="nav-links">
           <!-- USING CHECKBOX HACK -->
@@ -20,9 +19,10 @@
           <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
           <!-- NAVIGATION MENUS -->
           <div class="menu">
-            <li><a href="admin.html">Admin</a></li>
+            <li><a href="admin.php">Admin</a></li>
+            <li><a href="search.php">Search</a></li>
             <li class="services">
-              <a href="recipes.html">Recipes</a>
+              <a href="recipes.php">Recipes</a>
               <!-- DROPDOWN MENU -->
               <!-- <ul class="dropdown">
                 <li><a href="/">Breakfast Recipes</a></li>
@@ -40,7 +40,7 @@
     <h1>Search Results</h1>
     <div class="result">
         <div class="homeimg1">
-            <a href="details.html"><img class="food" src="images/burger.png" alt="Burger"></a>
+            <a href="details.php"><img class="food" src="images/burger.png" alt="Burger"></a>
         </div>
         <div class="info1">
             <h2>Best Hamburger Patty Recipe</h2>
