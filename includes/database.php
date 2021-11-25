@@ -6,7 +6,7 @@ $dbuser = 'root';
 $dbpass = 'root';
 $dbname = 'local_idm232';
 
-$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+$con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
 if (mysqli_connect_errno()) {
     die ("Database connection failed: " .

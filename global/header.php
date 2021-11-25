@@ -1,6 +1,14 @@
 <?php
 
-include 'includes/database.php';
+include '../includes/helper.php';
+include '../includes/database.php';
+
+
+if (isset($body_class)) {
+  $body_class = $body_class;
+} else {
+  $body_class = '';
+}
 
 ?>
 
@@ -10,15 +18,15 @@ include 'includes/database.php';
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home</title>
 </head>
 <body>
     <nav class="navbar">
         <!-- LOGO -->
-        <div class="logo"><a href="index.php">Logo</a></div>
+        <div class="logo"><a href="../../../index.php">Logo</a></div>
         <!-- NAVIGATION MENU -->
         <ul class="nav-links">
           <!-- USING CHECKBOX HACK -->

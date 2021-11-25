@@ -38,7 +38,7 @@
         </ul>
     </nav>
     <div class="content">
-        <button class="add"><a href="add.php">ADD RECIPE</a> </button>
+        <button class="add"><a href="admin/add.php">ADD RECIPE</a> </button>
         <button class="edit"><a href="">EDIT RECIPE</a></button>
         <button class="delete"><a href="">DELETE RECIPE</a></button>
     </div>
