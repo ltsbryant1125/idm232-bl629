@@ -1,7 +1,7 @@
 <?php
 
-include './includes/helper.php';
-include './includes/database.php';
+include '../includes/helper.php';
+include '../includes/database.php';
 
 
 if (isset($body_class)) {
@@ -15,6 +15,9 @@ if (isset($body_class)) {
 <html>
 
 <head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -30,10 +33,10 @@ if (isset($body_class)) {
           <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
           <!-- NAVIGATION MENUS -->
           <div class="menu">
-            <li><a href="admin/all.php">Admin</a></li>
-            <li><a href="search.php">Search</a></li>
+            <li><a href="all.php">Admin</a></li>
+            <li><a href="../search.php">Search</a></li>
             <li class="services">
-              <a href="recipes.php">Recipes</a>
+              <a href="../recipes.php">Recipes</a>
               <!-- DROPDOWN MENU -->
               <!-- <ul class="dropdown">
                 <li><a href="/">Breakfast Recipes</a></li>
@@ -48,5 +51,3 @@ if (isset($body_class)) {
           </div>
         </ul>
       </nav>
-</body>
-</html>

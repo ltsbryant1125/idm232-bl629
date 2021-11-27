@@ -1,9 +1,9 @@
 <?php
 while ($row = mysqli_fetch_assoc($db_results)) { ?>
-     <div class="master-recipe-card roboto">
-        <div class=" master-recipe-card-text">
+     <div>
+        <div>
             <a href="../users/recipe-detail.php?id=<?php echo $row['id']; ?>">
-                <h4 class="master-recipe-title"><?php echo $row['Title']; ?></h4>
+                <h4><?php echo $row['Title']; ?></h4>
             </a>
             <div>
                 <div>

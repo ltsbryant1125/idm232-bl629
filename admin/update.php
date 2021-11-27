@@ -2,8 +2,7 @@
 $page_title = 'Update Recipe';
 $body_class = 'add-recipe';
 
-include_once '../global/header.php';
-
+include_once '../global/Adminheader.php';
 
 if (isset($_POST['update'])) {
     $recipe_id = $_POST['recipe_id'];
@@ -12,17 +11,17 @@ if (isset($_POST['update'])) {
         redirectTo('/admin/update.php?id=' . $_GET['id'] . '&error=User ID does not match current user.');
     }
     //  Parse Data
-    $title = mysqli_real_escape_string($con, $_POST['Title']);
-    $recipeDetails = mysqli_real_escape_string($con, $_POST['Notes']);
-    $recipeIngredients = mysqli_real_escape_string($con, $_POST['Ingredients']);
-    $recipeInstructions = mysqli_real_escape_string($con, $_POST['Directions']);
+    $title = mysqli_real_escape_string($con, $_POST['recipeTitle']);
+    $recipeDetails = mysqli_real_escape_string($con, $_POST['recipeNotes']);
+    $recipeIngredients = mysqli_real_escape_string($con, $_POST['recipeIngredients']);
+    $recipeInstructions = mysqli_real_escape_string($con, $_POST['recipeDirections']);
 
     // Build Query
     $sql = 'UPDATE local_recipes SET ';
     $sql .= "Title = '{$title}', ";
     $sql .= "Notes = '{$recipeDetails}', ";
     $sql .= "Ingredients = '{$recipeIngredients}', ";
-    $sql .= "Directions = '{$recipeInstructions}', ";
+    $sql .= "Directions = '{$recipeInstructions}' ";
     $sql .= "WHERE id = {$recipe_id}";
 
     // Execute Query
@@ -57,9 +56,9 @@ if (isset($_POST['update'])) {
 ?>
 
 
-<div class="hp-content hp-content-secondary" id="category-content">
+<div id="category-content">
     <div>
-        <h2 class="secondary-title roboto">Edit Recipe</h2>
+        <h2>Edit Recipe</h2>
         <form method="POST" id="addRecipe" action="" enctype="multipart/form-data">
 
             <label for="title">Title:</label>
@@ -67,25 +66,25 @@ if (isset($_POST['update'])) {
 
             <div>
                 <label for="notes">Notes:</label>
-                <p class="roboto add-recipe-note">Use the '|' (vertical bar) key to add new note
+                <p class="roboto add-recipe-note">Add Note Here
                 </p>
                 <div>
-                    <textarea class="add-text" type="text" id="notesList"><?php echo $user['Notes']; ?></textarea>
+                    <textarea class="add-text" type="text" id="notesList" name="recipeNotes"><?php echo $user['Notes']; ?></textarea>
                 </div>
             </div>
-            <div class="field_wrapper wrapper-style">
+            <div>
                 <label for="ingredients">Ingredients:</label>
-                <p class="roboto add-recipe-note">Use the '|' (vertical bar) key to add new ingredient</p>
+                <p>Add Ingredients Here</p>
                 <div>
                     <textarea class="add-text" type="text" id="ingredientList" name="recipeIngredients"><?php echo $user['Ingredients']; ?></textarea>
                 </div>
             </div>
 
-            <div class="field_wrapper2 wrapper-style">
-                <label for="instructions">Instructions:</label>
-                <p class="roboto add-recipe-note">Use the '|' (vertical bar) key to add new instruction</p>
+            <div>
+                <label for="instructions">Directions:</label>
+                <p>Add Directions Here</p>
                 <div>
-                    <textarea class="add-text" type="text" id="instructionList" name="recipeInstructions"><?php echo $user['Directions']; ?></textarea>
+                    <textarea class="add-text" type="text" id="instructionList" name="recipeDirections"><?php echo $user['Directions']; ?></textarea>
                 </div>
             </div>
             <input type="hidden" value="<?php echo $user['id']; ?>" name="recipe_id">

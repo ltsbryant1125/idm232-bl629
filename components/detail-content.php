@@ -11,33 +11,32 @@ while ($row = mysqli_fetch_assoc($sql)) {
     $recipeIngredientsExplode = explode("|", htmlspecialchars_decode($row['Ingredients']));
     $recipeInstructionsExplode = explode("|", htmlspecialchars_decode($row['Directions']));
 ?>
-    <div class="detail-top">
-        <div id="text-side">
-            <h2 class="elsie"><?php echo $row['Title']; ?></h2>
-            <!-- <h3 class="roboto">~25 MINS</h3> -->
+    <div>
+        <div>
+            <h2><?php echo $row['Title']; ?></h2>
         </div>
     </div>
-    <div class="detail-content">
-        <div class="detail-element">
-            <h4 class="detail-subtitle roboto">Notes</h4>
-            <ul class="detail-list roboto">
+    <div>
+        <div>
+            <h4>Notes</h4>
+            <ul>
                 <?php foreach($recipeNotesExplode as $value){
                     echo "<li>$value</li>";}; ?>
             </ul>
         </div>
-        <div class="detail-element">
-            <h4 class="detail-subtitle roboto">INGREDIENTS</h4>
-            <ul class="detail-list roboto">
+        <div>
+            <h4>INGREDIENTS</h4>
+            <ul>
                 <?php foreach($recipeIngredientsExplode as $value){
                     echo "<li>$value</li>";}; ?>
             </ul>
         </div>
-        <div class="detail-element">
-            <h4 class="detail-subtitle roboto">INSTRUCTIONS</h4>
-            <ol class="detail-list roboto">
+        <div>
+            <h4>INSTRUCTIONS</h4>
+            <ul>
                 <?php foreach ($recipeInstructionsExplode as $value) {
         echo "<li>$value</li>";}; ?>
-            </ol>
+            </ul>
         </div>
     </div>
 <?php

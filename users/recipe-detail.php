@@ -1,7 +1,7 @@
 <?php
 $page_title = 'Detail';
 
-include_once '../global/header.php';
+include_once '../global/Adminheader.php';
 
 $sql = 'SELECT * FROM local_recipes';
 $db_results = mysqli_query($con, $sql);

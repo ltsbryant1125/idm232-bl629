@@ -1,7 +1,7 @@
 <?php
 $page_title = 'All-Recipes';
 
-include_once '../global/header.php';
+include_once '../global/Adminheader.php';
 
 
 $sql = 'SELECT id, Title ';
@@ -23,6 +23,9 @@ $db_results = mysqli_query($con, $sql);
             echo '<p>There are currently no users in the database</p>';
         }
         ?>
+    </div>
+    <div>
+        <button><a href="add.php">ADD RECIPE</a> </button>
     </div>
 </body>
 </html>
