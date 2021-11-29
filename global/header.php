@@ -15,14 +15,14 @@ if (isset($body_class)) {
 <html>
 
 <head>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav class="navbar">
         <!-- LOGO -->
-        <div class="logo"><a href="../../../index.php">Logo</a></div>
+        <div class="logo"><a href="index.php">Logo</a></div>
         <!-- NAVIGATION MENU -->
         <ul class="nav-links">
           <!-- USING CHECKBOX HACK -->

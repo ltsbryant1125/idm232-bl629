@@ -7,7 +7,7 @@ include_once 'global/header.php';
 
 <html>
 
-<body>
+<body> 
     <div class="background-image">
       <div class="centertxt"><h1>Try our new Thanksgiving Recipes!</h1></div>
     </div>

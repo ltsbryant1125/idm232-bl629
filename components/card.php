@@ -1,6 +1,5 @@
 <?php
 while ($row = mysqli_fetch_assoc($db_results)) { ?>
-     <div>
         <div>
             <a href="../users/recipe-detail.php?id=<?php echo $row['id']; ?>">
                 <h4><?php echo $row['Title']; ?></h4>
@@ -18,7 +17,6 @@ while ($row = mysqli_fetch_assoc($db_results)) { ?>
                 </div>
             </div>
         </div>
-    </div>
 <?php
 }
 ?>

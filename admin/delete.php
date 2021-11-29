@@ -1,5 +1,5 @@
 <?php
-$page_title = 'Delete User';
+$page_title = 'Delete Recipe';
 $body_class = 'add-recipe';
 include_once '../global/Adminheader.php';
 

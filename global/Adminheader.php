@@ -25,7 +25,7 @@ if (isset($body_class)) {
 <body>
     <nav class="navbar">
         <!-- LOGO -->
-        <div class="logo"><a href="../../../index.php">Logo</a></div>
+        <div class="logo"><a href="../index.php">Logo</a></div>
         <!-- NAVIGATION MENU -->
         <ul class="nav-links">
           <!-- USING CHECKBOX HACK -->
