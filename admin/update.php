@@ -27,9 +27,10 @@ if (isset($_POST['update'])) {
     // Execute Query
     $db_results = mysqli_query($con, $sql);
 
-    if ($db_results && $db_results->num_rows > 0) {
+    if ($db_results) {
         // Success
-        redirectTo('/admin/all.php?success=');
+        // redirectTo('/admin/all.php');
+        header('Location: /admin/all.php');
     } else {
         // Error
         redirectTo('/admin/all.php?id=' . $recipe_id . '&error=' . mysqli_error($con));

@@ -14,18 +14,22 @@ $db_results = mysqli_query($con, $sql);
 <html>
 
 <body>
-    <div class="content">
-        <?php
+    <div id="allRecipes">
+        <div class="content">
+            <?php
 
-        if ($db_results && $db_results->num_rows > 0) {
-            include '../components/card.php';
-        } else {
-            echo '<p>There are currently no users in the database</p>';
-        }
-        ?>
+            if ($db_results && $db_results->num_rows > 0) {
+                include '../components/card.php';
+            } else {
+                echo '<p>There are currently no users in the database</p>';
+            }
+            ?>
+        </div>
     </div>
-    <div>
-        <button><a href="add.php">ADD RECIPE</a> </button>
+    <div id="allRecipes">
+        <div>
+            <button class="new"><a href="add.php">ADD RECIPE</a> </button>
+        </div>
     </div>
 </body>
 </html>

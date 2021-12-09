@@ -3,6 +3,12 @@
     $body_class = 'add-recipe';
 
     include_once '../global/Adminheader.php';
+
+    if (isset($POST['submit'])) {
+        //Parse Data
+        $files_array = explode('.', $_FILES['image']);
+        
+    }
 ?>
 
 <html>
@@ -13,6 +19,10 @@
     <form method="POST" id="addRecipe" action="create.php" enctype="multipart/form-data">
         <label for="Title">Title:</label>
         <input type="text" id="title" name="recipeTitle">
+        <div>
+            <label for="image">Image:</label>
+            <input type="file" value="" name="image">
+        </div>
         <div>
             <label for="notes">Notes</label>
             <textarea name="recipeNotes" id="recipeNotes" class="add-text"></textarea>

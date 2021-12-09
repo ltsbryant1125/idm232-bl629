@@ -1,8 +1,8 @@
 <?php
 while ($row = mysqli_fetch_assoc($db_results)) { ?>
-        <div>
+        <div class="recipe_heads">
             <a href="../users/recipe-detail.php?id=<?php echo $row['id']; ?>">
-                <h4><?php echo $row['Title']; ?></h4>
+                <h2><?php echo $row['Title']; ?></h2>
             </a>
             <div>
                 <div>
