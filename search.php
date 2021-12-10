@@ -1,7 +1,7 @@
 <?php
 $page_title = 'Search';
 
-include_once 'global/header.php';
+include_once __DIR__ . 'global/header.php';
 
 ?>
 

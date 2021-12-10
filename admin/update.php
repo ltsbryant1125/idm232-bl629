@@ -2,7 +2,7 @@
 $page_title = 'Update Recipe';
 $body_class = 'add-recipe';
 
-include_once '../global/Adminheader.php';
+include_once __DIR__ . '/../global/Adminheader.php';
 
 if (isset($_POST['update'])) {
     $recipe_id = $_POST['recipe_id'];

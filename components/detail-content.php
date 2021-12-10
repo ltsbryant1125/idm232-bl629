@@ -17,6 +17,9 @@ while ($row = mysqli_fetch_assoc($sql)) {
         </div>
     </div>
     <div>
+         <img width="400" src="<?php echo $row['file_path']; ?>" alt="">
+    </div>
+    <div>
         <div>
             <h4>Notes</h4>
             <ul>

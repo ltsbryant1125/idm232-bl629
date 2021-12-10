@@ -1,10 +1,10 @@
 <?php
 $page_title = 'All-Recipes';
 
-include_once '../global/Adminheader.php';
+include_once __DIR__ . '/../global/Adminheader.php';
 
 
-$sql = 'SELECT id, Title ';
+$sql = 'SELECT *';
 $sql .= 'FROM local_recipes';
 $db_results = mysqli_query($con, $sql);
 

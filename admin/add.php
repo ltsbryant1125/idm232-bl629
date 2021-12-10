@@ -2,13 +2,10 @@
     $page_title = 'Add';
     $body_class = 'add-recipe';
 
-    include_once '../global/Adminheader.php';
+    include_once __DIR__ . '/../global/Adminheader.php';
 
-    if (isset($POST['submit'])) {
-        //Parse Data
-        $files_array = explode('.', $_FILES['image']);
-        
-    }
+    // var_dump(__DIR__ . '../global/Adminheader.php');
+
 ?>
 
 <html>

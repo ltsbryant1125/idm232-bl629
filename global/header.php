@@ -30,7 +30,7 @@ if (isset($body_class)) {
           <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
           <!-- NAVIGATION MENUS -->
           <div class="menu">
-            <li><a href="admin/all.php">Admin</a></li>
+            <li><a href="admin/all.php">Log In</a></li>
             <li><a href="search.php">Search</a></li>
             <li class="services">
               <a href="recipes.php">Recipes</a>
