@@ -2,12 +2,12 @@
 
 //database info
 $dbhost = 'localhost';
-$dbuser = 'root';
-$dbpass = 'root';
-$dbname = 'local_idm232';
-// $dbuser = 'bludevde_mrpaulphan';
-// $dbpass = '($uZ_0C.gf=O';
-// $dbname = 'bludevde_idm232';
+// $dbuser = 'root';
+// $dbpass = 'root';
+// $dbname = 'local_idm232';
+$dbuser = 'bludevde_mrpaulphan';
+$dbpass = '($uZ_0C.gf=O';
+$dbname = 'bludevde_idm232';
 
 $con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
