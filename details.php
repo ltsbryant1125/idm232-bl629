@@ -1,7 +1,7 @@
 <?php
 $page_title = 'Home';
 
-include_once __DIR__ . 'global/header.php';
+include_once __DIR__ . '/global/header.php';
 
 ?>
 

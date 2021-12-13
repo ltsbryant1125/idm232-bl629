@@ -8,6 +8,7 @@ include_once __DIR__ . '/../config.php';
 if (isset($_POST['submit'])) {
     //  Parse Data
     $title = mysqli_real_escape_string($con, $_POST['recipeTitle']);
+    $category = mysqli_real_escape_string($con, $_POST['recipeCategory']);
     $recipeNotes = mysqli_real_escape_string($con, $_POST['recipeNotes']);
     $recipeIngredients = mysqli_real_escape_string($con, $_POST['recipeIngredients']);
     $recipeDirections = mysqli_real_escape_string($con, $_POST['recipeDirections']);
@@ -24,8 +25,8 @@ if (isset($_POST['submit'])) {
     
     if(move_uploaded_file($temp_name, $file_destination)) {
     // Build Query
-        $sql = "INSERT INTO `local_recipes`(`Title`, `file_path`, `Notes`, `Ingredients`, `Directions`) 
-        VALUES ('$title', '$file_path','$recipeNotes','$recipeIngredients','$recipeDirections');";
+        $sql = "INSERT INTO `local_recipes`(`Title`, `file_path`, `Category`, `Notes`, `Ingredients`, `Directions`) 
+        VALUES ('$title', '$file_path','$category','$recipeNotes','$recipeIngredients','$recipeDirections');";
 
     // Execute Query
     $db_results = mysqli_query($con, $sql);
@@ -46,13 +47,3 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
-
-// if (isset($POST['submit'])) {
-        
-        //Parse Data
-        $files_name = slugify($_FILES['image']['name']);
-        $temp_name = $_FILES['image']['tmp_name'];
-        $file_path = $app['asset_url'] . $file_name;
-        $file_destination = $SERVER['DOCUMENT_ROOT'] . $file_path;
-        
-    }

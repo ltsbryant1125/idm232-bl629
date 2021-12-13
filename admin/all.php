@@ -15,6 +15,11 @@ $db_results = mysqli_query($con, $sql);
 
 <body>
     <div id="allRecipes">
+        <div class="new">
+            <button><a href="add.php">ADD RECIPE</a> </button>
+        </div>
+    </div>
+    <div id="allRecipes">
         <div class="content">
             <?php
 
@@ -25,11 +30,6 @@ $db_results = mysqli_query($con, $sql);
             }
             ?>
         </div>
-    </div>
-    <div id="allRecipes">
-        <div>
-            <button class="new"><a href="add.php">ADD RECIPE</a> </button>
-        </div>
-    </div>
+    </div> 
 </body>
 </html>

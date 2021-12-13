@@ -15,8 +15,8 @@ if (isset($body_class)) {
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -31,9 +31,9 @@ if (isset($body_class)) {
           <!-- NAVIGATION MENUS -->
           <div class="menu">
             <li><a href="admin/all.php">Log In</a></li>
-            <li><a href="search.php">Search</a></li>
+            <li><a href="cat.php">Categories</a></li>
             <li class="services">
-              <a href="recipes.php">Recipes</a>
+              <a href="search-results.php">Recipes</a>
               <!-- DROPDOWN MENU -->
               <!-- <ul class="dropdown">
                 <li><a href="/">Breakfast Recipes</a></li>

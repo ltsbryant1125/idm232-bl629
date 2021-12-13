@@ -287,3 +287,108 @@ button {
     padding: 1rem;
     color: white;
 }
+
+.new a:visited {
+    color: white;
+}
+
+/* Start of Categories styling*/
+.hcontainer {
+    display: flex;
+    justify-content: center;
+    -webkit-display: box;
+    -moz-display: box;
+    -ms-display: flexbox;
+    -webkit-display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.hcards {
+    display: flex;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    max-width: 300px;
+}
+
+.hcard-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 20px 40px -14px rgb(0 0 0 / 25%);
+    overflow: hidden;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+}
+
+.hcard-image {
+    height: 200px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 6px 6px 0px 0px;
+    opacity: 0.91;
+}
+
+.hcard-info {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    line-height: 1.5em;
+}
+
+.himage {
+    width: 300px;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+}
+
+.Title {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.Hero {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.recipeNot {
+    grid-area: a;
+    max-width: 30rem;
+    margin: 1.5rem;
+}
+
+.recipeIng {
+    grid-area: b;
+    max-width: 15rem;
+    margin: 1.5rem;
+}
+
+.recipeIns {
+    grid-area: c;
+    max-width: 30rem;
+    margin: 1.5rem;
+}
+
+.Details {
+    display: grid;
+    grid-template-areas: 
+    'a'
+    'b'
+    'c';
+}
+
+.recipeDetails {
+    max-width: 30rem;
+}

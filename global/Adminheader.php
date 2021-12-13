@@ -35,9 +35,9 @@ if (isset($body_class)) {
           <!-- NAVIGATION MENUS -->
           <div class="menu">
             <li><a href="all.php">Log In</a></li>
-            <li><a href="../search.php">Search</a></li>
+            <li><a href="../cat.php">Categories</a></li>
             <li class="services">
-              <a href="../recipes.php">Recipes</a>
+              <a href="../search-results.php">Recipes</a>
               <!-- DROPDOWN MENU -->
               <!-- <ul class="dropdown">
                 <li><a href="/">Breakfast Recipes</a></li>

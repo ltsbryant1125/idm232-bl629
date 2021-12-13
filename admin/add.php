@@ -14,11 +14,16 @@
         <h1>New Recipe</h1>
     </div>
     <form method="POST" id="addRecipe" action="create.php" enctype="multipart/form-data">
+        <div>
         <label for="Title">Title:</label>
         <input type="text" id="title" name="recipeTitle">
         <div>
             <label for="image">Image:</label>
             <input type="file" value="" name="image">
+        </div>
+        <div>
+            <label for="categories">Category:</label>
+            <textarea name="recipeCategory" id="recipeCat"></textarea>
         </div>
         <div>
             <label for="notes">Notes</label>
